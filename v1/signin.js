@@ -1,3 +1,4 @@
+require('dotenv').config()
 const mysql = require('mysql2'); // get the client
 var bodyParser = require('body-parser'); //lib bodyParser
 var jsonParser = bodyParser.json() //lib bodyParser

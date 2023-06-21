@@ -1,3 +1,4 @@
+require('dotenv').config()
 var bodyParser = require('body-parser'); //lib bodyParser
 var jsonParser = bodyParser.json() //lib bodyParser
 const mysql = require('mysql2'); // get the client
@@ -11,7 +12,7 @@ const connection = mysql.createConnection({
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE
 });
-
+ 
 module.exports = function (app) {
 
     app.post('/users/chk', jsonParser, function (req, res) {
