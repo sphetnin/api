@@ -1,11 +1,9 @@
 require('dotenv').config()
 var express = require("express");
 var app = express();
-//var bodyParser = require('body-parser'); //lib bodyParser
 var cors = require('cors')
 
 app.use(cors())
-//app.use(bodyParser.json());
 app.data = [];
 
 var fs = require('fs');
