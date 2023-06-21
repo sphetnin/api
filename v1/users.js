@@ -4,7 +4,7 @@ var jsonParser = bodyParser.json() //lib bodyParser
 const mysql = require('mysql2'); // get the client
 const bcrypt = require('bcrypt'); //lib bcrypt
 const saltRounds = 10; //lib bcrypt
-
+ 
 // create the connection to database
 const connection = mysql.createConnection({
     host: process.env.DB_HOST,
