@@ -15,6 +15,5 @@ fs.readdirSync('./v1').forEach(function (file) {
     require('./v1/' + routeName)(app);
 });
 
-
 app.listen(3333);
 console.log("API Service is listening to port 3333.");
