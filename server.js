@@ -13,6 +13,7 @@ fs.readdirSync('./v1').forEach(function (file) {
     if (file[0] == '.') return;
     var routeName = file.substr(0, file.indexOf('.'));
     require('./v1/' + routeName)(app);
+    console.log(file)
 });
 
 app.listen(3333, function () {
