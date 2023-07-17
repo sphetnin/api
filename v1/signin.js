@@ -3,7 +3,7 @@ const mysql = require('mysql2'); // get the client
 var bodyParser = require('body-parser'); //lib bodyParser
 var jsonParser = bodyParser.json() //lib bodyParser
 var jwt = require('jsonwebtoken'); //lib jwt
-var secretKey = 'TEST_NODEJS_REST_API'; //lib jwt
+var secretKey = process.env.SECRET_KEY; //lib jwt
 const bcrypt = require('bcrypt'); //lib bcrypt
 
 // create the connection to database
